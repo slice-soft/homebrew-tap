@@ -5,21 +5,21 @@
 class Keel < Formula
   desc "Opinionated Go framework CLI for building structured services"
   homepage "https://keel-go.dev"
-  version "1.0.0"
+  version "1.1.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/slice-soft/keel/releases/download/v1.0.0/keel_darwin_amd64.tar.gz"
-      sha256 "610dec1b0dbdb9056e8b6488cf420050d5d3beb530a5db72e8bf6dd7d04b92b8"
+      url "https://github.com/slice-soft/keel/releases/download/v1.1.0/keel_darwin_amd64.tar.gz"
+      sha256 "504f734283558d4c28034e159618ce052c5a7600e220089d9c87ca5f50b332d7"
 
       define_method(:install) do
         bin.install "keel"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/slice-soft/keel/releases/download/v1.0.0/keel_darwin_arm64.tar.gz"
-      sha256 "7185364bca5e494da9b3aa913dc5ee53576c1322a2036393d7c1505eb9bd26b1"
+      url "https://github.com/slice-soft/keel/releases/download/v1.1.0/keel_darwin_arm64.tar.gz"
+      sha256 "9bc250128ec211c30e7d29086e51550b3069261443513af60c9f50aaff9cae3a"
 
       define_method(:install) do
         bin.install "keel"
@@ -29,15 +29,15 @@ class Keel < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/slice-soft/keel/releases/download/v1.0.0/keel_linux_amd64.tar.gz"
-      sha256 "0dfae61f4018d3e6d394549b6d4523dc956d10d9b21bc15d0b43bb72348a3dee"
+      url "https://github.com/slice-soft/keel/releases/download/v1.1.0/keel_linux_amd64.tar.gz"
+      sha256 "616f88ee0d98116e7b0c98a35cc1dc61479422491b6927996ad1b5a3e4d0a447"
       define_method(:install) do
         bin.install "keel"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/slice-soft/keel/releases/download/v1.0.0/keel_linux_arm64.tar.gz"
-      sha256 "d994da749e970b45f06decf2e090c5af80c2eb79694a2bb856628b9212f145e1"
+      url "https://github.com/slice-soft/keel/releases/download/v1.1.0/keel_linux_arm64.tar.gz"
+      sha256 "8e6f598bb26905a060016d6d6f37bb65f3e026a18d72d91afebba7b4e55992f6"
       define_method(:install) do
         bin.install "keel"
       end
